@@ -6,30 +6,30 @@ export default {
         desc: "First Desc",
         promo: true,
         src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
-        id: "1",
+        id: "1"
       },
       {
         title: "Second",
         desc: "Second Desc",
         promo: true,
         src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
-        id: "2",
+        id: "2"
       },
       {
         title: "Third",
-        desc: "Thitd Desc",
+        desc: "Third Desc",
         promo: true,
         src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
-        id: "3",
+        id: "3"
       },
       {
-        title: "Fouth",
-        desc: "Fouth Desc",
+        title: "Fourth",
+        desc: "Fourth Desc",
         promo: true,
         src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
-        id: "4",
-      },
-    ],
+        id: "4"
+      }
+    ]
   },
   mutations: {},
   actions: {},
@@ -38,12 +38,10 @@ export default {
       return state.ads;
     },
     promoAds(state) {
-      return state.ads.filter((ad) => {
-        return ad.promo;
-      });
+      return state.ads.filter(ad => ad.promo);
     },
     myAds(state) {
       return state.ads;
-    },
-  },
+    }
+  }
 };
