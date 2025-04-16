@@ -8,16 +8,16 @@
                     </v-toolbar>
                     <v-card-text>
                         <v-form>
-                            <v-text-field prepend-icon="mdi-account" name="email" label="Email" type="email">
+                            <v-text-field prepend-icon="mdi-account" name="email" label="Email" type="email"
+                                v-model="email">
                             </v-text-field>
-                            <v-text-field prepend-icon="mdi-lock" name="password" label="Password" type="password">
+                            <v-text-field prepend-icon="mdi-lock" name="password" label="Password" type="password"
+                                v-model="password">
                             </v-text-field>
                         </v-form>
                     </v-card-text>
                     <v-card-actions>
-                        
                         <v-spacer></v-spacer>
-
                         <v-btn color="primary">Login</v-btn>
                     </v-card-actions>
                 </v-card>
@@ -25,11 +25,12 @@
         </v-row>
     </v-container>
 </template>
-
 <script>
 export default {
     data() {
         return {
+            email: "",
+            password: ""
         }
     }
 }
