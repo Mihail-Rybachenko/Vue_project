@@ -40,7 +40,7 @@
 </template>
 
 <script>
-// ЗАМЕНИТЬ НА 6, ЕСЛИ ЗАХОЧУ 2*2
+
 export default {
   data() {
     return {
